@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls namespace="Department">
+    <sql id="selectById">SELECT DepartmentID, DepartmentCode, DepartmentName, DepartmentDsc, DepartmentTypeID, CompanyID, ParentDepartmentID, LeaderID, ViceLeaderID, IsDelete, InterfaceID, Parent, LocationIP, DataBaseIP, IsEndowARight, LockStatus, Category, UnitLevel FROM CSYS_Department WHERE DepartmentID=:DepartmentID</sql>
+    <sql id="selectList">SELECT DepartmentID, DepartmentCode, DepartmentName, DepartmentDsc, DepartmentTypeID, CompanyID, ParentDepartmentID, LeaderID, ViceLeaderID, IsDelete, InterfaceID, Parent, LocationIP, DataBaseIP, IsEndowARight, LockStatus, Category, UnitLevel FROM CSYS_Department</sql>
+    <sql id="insert">INSERT INTO CSYS_Department (DepartmentID, DepartmentCode, DepartmentName, DepartmentDsc, DepartmentTypeID, CompanyID, ParentDepartmentID, LeaderID, ViceLeaderID, IsDelete, InterfaceID, Parent, LocationIP, DataBaseIP, IsEndowARight, LockStatus, Category, UnitLevel) VALUES (:DepartmentID, :DepartmentCode, :DepartmentName, :DepartmentDsc, :DepartmentTypeID, :CompanyID, :ParentDepartmentID, :LeaderID, :ViceLeaderID, :IsDelete, :InterfaceID, :Parent, :LocationIP, :DataBaseIP, :IsEndowARight, :LockStatus, :Category, :UnitLevel)</sql>
+    <sql id="update">UPDATE CSYS_Department SET DepartmentID=:DepartmentID, DepartmentCode=:DepartmentCode, DepartmentName=:DepartmentName, DepartmentDsc=:DepartmentDsc, DepartmentTypeID=:DepartmentTypeID, CompanyID=:CompanyID, ParentDepartmentID=:ParentDepartmentID, LeaderID=:LeaderID, ViceLeaderID=:ViceLeaderID, IsDelete=:IsDelete, InterfaceID=:InterfaceID, Parent=:Parent, LocationIP=:LocationIP, DataBaseIP=:DataBaseIP, IsEndowARight=:IsEndowARight, LockStatus=:LockStatus, Category=:Category, UnitLevel=:UnitLevel WHERE DepartmentID=:DepartmentID</sql>
+    <sql id="deleteById">DELETE FROM CSYS_Department WHERE DepartmentID=:DepartmentID</sql>
+    <sql id="count">SELECT COUNT(*) FROM CSYS_Department</sql>
+    <sql id="selectDepartmentInfos">SELECT DepartmentCode, DepartmentName, DepartmentDsc, DepartmentID, ParentDepartmentID,IsDelete FROM CSYS_Department</sql>
+
+
+</sqls>

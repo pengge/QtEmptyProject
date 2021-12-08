@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls namespace="Phase">
+    <sql id="selectById">SELECT PhaseID, PhaseName, PhaseDesc, MissionTime, EnvironmentID, PrjName FROM CSYS_Phase WHERE PhaseID=:PhaseID</sql>
+    <sql id="selectList">SELECT PhaseID, PhaseName, PhaseDesc, MissionTime, EnvironmentID, PrjName FROM CSYS_Phase</sql>
+    <sql id="insert">INSERT INTO CSYS_Phase (PhaseID, PhaseName, PhaseDesc, MissionTime, EnvironmentID, PrjName) VALUES (:PhaseID, :PhaseName, :PhaseDesc, :MissionTime, :EnvironmentID, :PrjName)</sql>
+    <sql id="update">UPDATE CSYS_Phase SET PhaseID=:PhaseID, PhaseName=:PhaseName, PhaseDesc=:PhaseDesc, MissionTime=:MissionTime, EnvironmentID=:EnvironmentID, PrjName=:PrjName WHERE PhaseID=:PhaseID</sql>
+    <sql id="deleteById">DELETE FROM CSYS_Phase WHERE PhaseID=:PhaseID</sql>
+    <sql id="count">SELECT COUNT(*) FROM CSYS_Phase</sql>
+    <sql id="selectPhaseInfos">SELECT PhaseID, PhaseName, PhaseDesc, PrjName FROM CSYS_Phase</sql>
+</sqls>

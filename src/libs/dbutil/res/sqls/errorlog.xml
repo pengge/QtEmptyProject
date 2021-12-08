@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls namespace="ErrorLog">
+    <sql id="selectById">SELECT LogNo, MemberID, LogTime, ErrorCode, ErrorMsg, ErrorDetail, IsDel, Remark, ClientName FROM CSYS_ErrorLog WHERE LogNo=:LogNo</sql>
+    <sql id="selectList">SELECT LogNo, MemberID, LogTime, ErrorCode, ErrorMsg, ErrorDetail, IsDel, Remark, ClientName FROM CSYS_ErrorLog</sql>
+    <sql id="insert">INSERT INTO CSYS_ErrorLog (LogNo, MemberID, LogTime, ErrorCode, ErrorMsg, ErrorDetail, IsDel, Remark, ClientName) VALUES (:LogNo, :MemberID, :LogTime, :ErrorCode, :ErrorMsg, :ErrorDetail, :IsDel, :Remark, :ClientName)</sql>
+    <sql id="update">UPDATE CSYS_ErrorLog SET LogNo=:LogNo, MemberID=:MemberID, LogTime=:LogTime, ErrorCode=:ErrorCode, ErrorMsg=:ErrorMsg, ErrorDetail=:ErrorDetail, IsDel=:IsDel, Remark=:Remark, ClientName=:ClientName WHERE LogNo=:LogNo</sql>
+    <sql id="deleteById">DELETE FROM CSYS_ErrorLog WHERE LogNo=:LogNo</sql>
+    <sql id="count">SELECT COUNT(*) FROM CSYS_ErrorLog</sql>
+    
+    <sql id="pseudoDelete">UPDATE CSYS_ErrorLog SET IsDel = 1 WHERE LogNo=:LogNo</sql>
+    <sql id="selectErrorLogInfos">SELECT CSYS_ErrorLog.LogNo,CSYS_Members.MemberID,CSYS_Members.MemberName,CSYS_ErrorLog.LogTime,CSYS_ErrorLog.ErrorCode,CSYS_ErrorLog.ErrorMsg,CSYS_ErrorLog.ErrorDetail,CSYS_ErrorLog.IsDel,CSYS_ErrorLog.Remark,CSYS_ErrorLog.ClientName FROM CSYS_ErrorLog  LEFT JOIN CSYS_Members ON (CSYS_ErrorLog.MemberID=CSYS_Members.MemberID)</sql>
+</sqls>

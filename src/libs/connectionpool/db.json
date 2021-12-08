@@ -1,0 +1,25 @@
+﻿{
+  "connectionPool": {
+    "checkInterval": 30000,
+    "minConnections": 1,
+    "maxConnections": 1,
+    "connectionLifePeriod": 300000,
+    "inactivityPeriod": 600000,
+    "database": {
+        "driver": "QODBC",
+        "host": "localhost",
+        "port": 1433,
+        "database": "DRIVER={SQL SERVER};SERVER=localhost,1433;DATABASE=CARMES10_5Y;UID=CARMES6User;PWD=CA.RME!S6U#*ser;",
+        "user": "CARMES6User",
+        "password": "CA.RME!S6U#*ser"
+    },
+    "mysqldatabase": {
+        "driver": "QMYSQL",
+        "host": "localhost",
+        "port": 3306,
+        "database": "carmes10_5y",
+        "user": "root",
+        "password": "123456"
+    }
+  }
+}
